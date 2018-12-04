@@ -12,13 +12,16 @@
 # Part 1:
 - Source file: NG.java
 - Jar file: NG.jar
+
 Command example: bin/hadoop jar path/to/jar/NG.jar input/ output/ n
+
 * n could be any integer 
 
 # Part 2: 
 ## 1.
 - Source file: SearchString.java
 - Jar file: searchstring.jar
+
 Command example: 
 
 ```
@@ -30,6 +33,7 @@ bin/hadoop jar path/to/jar/searchstring.jar SearchString input/ output/
 ## 2.
 - Source file: SearchSIP.java 
 - Jar file: searchsip.jar
+
 Command example: 
 
 ```
@@ -41,6 +45,7 @@ bin/hadoop jar path/to/jar/searchsip.jar input/ output/
 ## 3.
 - Source file: SearchPath.java , SearchSort.java
 - Jar file: searchpath.jar, searchsort.jar
+
 Instructions: run searchpath.jar first then run searchsort.jar for ranking
 
 Command example: 
@@ -59,9 +64,11 @@ hdfs dfs -cat output/*
 ## 4.
 - Source file: SearchIP.java , SearchSort.java
 - Jar file:  searchip.jar, searchsort.jar
+
 Instructions: run searchip.jar first then run searchsort.jar for ranking
 
 Command example: 
+
 ```
 bin/hadoop jar path/to/jar/searchip.jar input/ output/
 hdfs dfs -rm input/*
