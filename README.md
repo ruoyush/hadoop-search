@@ -1,5 +1,9 @@
 > Ruoyu Li <rul29@pitt.edu>
 
+Mini Project for analyzing Apache access log
+
+- hadoopDocker: docker file for configuring hadoop cluster
+
 # Please compile the java files into jar files first:
 
 - NG.java -> NG.jar
@@ -9,7 +13,7 @@
 - SearchIP.java -> searchip.jar
 - SearchSIP.java -> searchsip.jar
 
-# Part 1:
+# Part 1: N-gram
 - Source file: NG.java
 - Jar file: NG.jar
 
@@ -18,7 +22,7 @@ Command example: bin/hadoop jar path/to/jar/NG.jar input/ output/ n
 * n could be any integer 
 
 # Part 2: 
-## 1.
+## 1. search the frequency of a string in a log file
 - Source file: SearchString.java
 - Jar file: searchstring.jar
 
@@ -30,7 +34,7 @@ bin/hadoop jar path/to/jar/searchstring.jar SearchString input/ output/
 
 > /assets/img/home-logo.png	98776
 
-## 2.
+## 2. search the frequency of an IP in a log file
 - Source file: SearchSIP.java 
 - Jar file: searchsip.jar
 
@@ -42,7 +46,7 @@ bin/hadoop jar path/to/jar/searchsip.jar input/ output/
 
 > 10.153.239.5	547
 
-## 3.
+## 3. search the frequency of the most accessed path in a log file
 - Source file: SearchPath.java , SearchSort.java
 - Jar file: searchpath.jar, searchsort.jar
 
@@ -61,7 +65,7 @@ hdfs dfs -cat output/*
 
 > 117348	/assets/css/combined.css
 
-## 4.
+## 4. search the frequency of an IP in a log file
 - Source file: SearchIP.java , SearchSort.java
 - Jar file:  searchip.jar, searchsort.jar
 
